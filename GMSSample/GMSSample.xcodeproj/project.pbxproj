@@ -14,6 +14,7 @@
 		9CFF6FB329CE89D9008EAC0C /* GMSSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FB229CE89D9008EAC0C /* GMSSampleTests.swift */; };
 		9CFF6FBD29CE89D9008EAC0C /* GMSSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FBC29CE89D9008EAC0C /* GMSSampleUITests.swift */; };
 		9CFF6FBF29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FBE29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift */; };
+		A1F1C6AA3951F17EC3064143 /* libPods-GMSSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B7B0AD2B2B77BB9F2A43D7 /* libPods-GMSSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41B7B0AD2B2B77BB9F2A43D7 /* libPods-GMSSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMSSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF6F9E29CE89D6008EAC0C /* GMSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF6FA129CE89D6008EAC0C /* GMSSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSSampleApp.swift; sourceTree = "<group>"; };
 		9CFF6FA329CE89D6008EAC0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		9CFF6FB829CE89D9008EAC0C /* GMSSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF6FBC29CE89D9008EAC0C /* GMSSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSSampleUITests.swift; sourceTree = "<group>"; };
 		9CFF6FBE29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2B3735C406565D6DB686EE4 /* Pods-GMSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSSample.release.xcconfig"; path = "Target Support Files/Pods-GMSSample/Pods-GMSSample.release.xcconfig"; sourceTree = "<group>"; };
+		F68CC11D326A2CF4CAF5B645 /* Pods-GMSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSSample.debug.xcconfig"; path = "Target Support Files/Pods-GMSSample/Pods-GMSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F1C6AA3951F17EC3064143 /* libPods-GMSSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5193B61CDDFEFDFAC899B12C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B7B0AD2B2B77BB9F2A43D7 /* libPods-GMSSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CFF6F9529CE89D6008EAC0C = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +91,8 @@
 				9CFF6FB129CE89D9008EAC0C /* GMSSampleTests */,
 				9CFF6FBB29CE89D9008EAC0C /* GMSSampleUITests */,
 				9CFF6F9F29CE89D6008EAC0C /* Products */,
+				C629F0885B46DB51E3824394 /* Pods */,
+				5193B61CDDFEFDFAC899B12C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +142,16 @@
 			path = GMSSampleUITests;
 			sourceTree = "<group>";
 		};
+		C629F0885B46DB51E3824394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68CC11D326A2CF4CAF5B645 /* Pods-GMSSample.debug.xcconfig */,
+				F2B3735C406565D6DB686EE4 /* Pods-GMSSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFF6FC229CE89D9008EAC0C /* Build configuration list for PBXNativeTarget "GMSSample" */;
 			buildPhases = (
+				3D6E445A100C91C074F79E27 /* [CP] Check Pods Manifest.lock */,
 				9CFF6F9A29CE89D6008EAC0C /* Sources */,
 				9CFF6F9B29CE89D6008EAC0C /* Frameworks */,
 				9CFF6F9C29CE89D6008EAC0C /* Resources */,
+				DAEADC19573A982A230367A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D6E445A100C91C074F79E27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMSSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAEADC19573A982A230367A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSSample/Pods-GMSSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSSample/Pods-GMSSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMSSample/Pods-GMSSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CFF6F9A29CE89D6008EAC0C /* Sources */ = {
@@ -411,6 +480,7 @@
 		};
 		9CFF6FC329CE89D9008EAC0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68CC11D326A2CF4CAF5B645 /* Pods-GMSSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +510,7 @@
 		};
 		9CFF6FC429CE89D9008EAC0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B3735C406565D6DB686EE4 /* Pods-GMSSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
