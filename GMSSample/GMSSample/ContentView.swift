@@ -9,13 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        // Shinjuku station
+        GoogleMapView(latitude: 35.6896067,
+                      longitude: 139.7005713,
+                      zoom: 15.0)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

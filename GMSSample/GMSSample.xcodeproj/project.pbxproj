@@ -14,6 +14,8 @@
 		9CFF6FB329CE89D9008EAC0C /* GMSSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FB229CE89D9008EAC0C /* GMSSampleTests.swift */; };
 		9CFF6FBD29CE89D9008EAC0C /* GMSSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FBC29CE89D9008EAC0C /* GMSSampleUITests.swift */; };
 		9CFF6FBF29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FBE29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift */; };
+		9CFF6FCC29CE8B1B008EAC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FCB29CE8B1B008EAC0C /* AppDelegate.swift */; };
+		9CFF6FD029CE8F46008EAC0C /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF6FCF29CE8F46008EAC0C /* GoogleMapView.swift */; };
 		A1F1C6AA3951F17EC3064143 /* libPods-GMSSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B7B0AD2B2B77BB9F2A43D7 /* libPods-GMSSample.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		9CFF6FB829CE89D9008EAC0C /* GMSSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF6FBC29CE89D9008EAC0C /* GMSSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSSampleUITests.swift; sourceTree = "<group>"; };
 		9CFF6FBE29CE89D9008EAC0C /* GMSSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CFF6FCB29CE8B1B008EAC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CFF6FCF29CE8F46008EAC0C /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		F2B3735C406565D6DB686EE4 /* Pods-GMSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSSample.release.xcconfig"; path = "Target Support Files/Pods-GMSSample/Pods-GMSSample.release.xcconfig"; sourceTree = "<group>"; };
 		F68CC11D326A2CF4CAF5B645 /* Pods-GMSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSSample.debug.xcconfig"; path = "Target Support Files/Pods-GMSSample/Pods-GMSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +113,10 @@
 		9CFF6FA029CE89D6008EAC0C /* GMSSample */ = {
 			isa = PBXGroup;
 			children = (
+				9CFF6FCB29CE8B1B008EAC0C /* AppDelegate.swift */,
 				9CFF6FA129CE89D6008EAC0C /* GMSSampleApp.swift */,
 				9CFF6FA329CE89D6008EAC0C /* ContentView.swift */,
+				9CFF6FCF29CE8F46008EAC0C /* GoogleMapView.swift */,
 				9CFF6FA529CE89D9008EAC0C /* Assets.xcassets */,
 				9CFF6FA729CE89D9008EAC0C /* Preview Content */,
 			);
@@ -148,7 +154,6 @@
 				F68CC11D326A2CF4CAF5B645 /* Pods-GMSSample.debug.xcconfig */,
 				F2B3735C406565D6DB686EE4 /* Pods-GMSSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -326,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFF6FD029CE8F46008EAC0C /* GoogleMapView.swift in Sources */,
+				9CFF6FCC29CE8B1B008EAC0C /* AppDelegate.swift in Sources */,
 				9CFF6FA429CE89D6008EAC0C /* ContentView.swift in Sources */,
 				9CFF6FA229CE89D6008EAC0C /* GMSSampleApp.swift in Sources */,
 			);
@@ -484,10 +491,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GMSSample/Preview Content\"";
-				DEVELOPMENT_TEAM = TXFV3DH636;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TXFV3DH636;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -495,13 +504,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.kotetu.sample.googlemap.GMSSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kotetu.sample.googlemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Google Map Sample App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,10 +526,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GMSSample/Preview Content\"";
-				DEVELOPMENT_TEAM = TXFV3DH636;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TXFV3DH636;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -525,13 +539,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.kotetu.sample.googlemap.GMSSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kotetu.sample.googlemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Google Map Sample App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
